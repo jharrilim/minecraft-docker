@@ -6,4 +6,4 @@ build:
 	docker build -t $(name) .
 
 run:
-	docker run --rm $(name)
+	docker run --rm -p "19132:19132" $(name)
